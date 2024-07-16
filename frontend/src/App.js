@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-    All Nations Hotel Hanoi
+    Parallel World Hotel Hanoi
     </>
   );
 }
