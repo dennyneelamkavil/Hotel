@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, useMediaQuery, Stack } from "@mui/material";
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, useMediaQuery, Stack, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "@mui/material/styles";
 
 export default function Navbar () {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
 

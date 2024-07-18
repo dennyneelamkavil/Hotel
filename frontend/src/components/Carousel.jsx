@@ -7,6 +7,7 @@ import image1 from "../assets/images/Untitled-1.jpg.webp";
 import image2 from "../assets/images/Untitled-2.jpg.webp";
 import image3 from "../assets/images/Untitled-3.jpg.webp";
 import image4 from "../assets/images/Untitled-5.jpg.webp";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -30,7 +31,10 @@ const PrevArrow = (props) => {
   );
 };
 
-const ImageSlider = () => {
+export default function Carousel() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
+
   const settings = {
     dots: true,
     infinite: true,
@@ -55,7 +59,7 @@ const ImageSlider = () => {
               backgroundImage: `url(${image1})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              height: "90vh",
+              height: isMobile ? "100vh" : "90vh",
               width: "100%",
             }}
           >
@@ -70,7 +74,7 @@ const ImageSlider = () => {
               backgroundImage: `url(${image2})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              height: "90vh",
+              height: isMobile ? "100vh" : "90vh",
               width: "100%",
             }}
           >
@@ -85,7 +89,7 @@ const ImageSlider = () => {
               backgroundImage: `url(${image3})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              height: "90vh",
+              height: isMobile ? "100vh" : "90vh",
               width: "100%",
             }}
           >
@@ -100,7 +104,7 @@ const ImageSlider = () => {
               backgroundImage: `url(${image4})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              height: "90vh",
+              height: isMobile ? "100vh" : "90vh",
               width: "100%",
             }}
           >
@@ -112,5 +116,3 @@ const ImageSlider = () => {
       </Slider>
   );
 };
-
-export default ImageSlider;
