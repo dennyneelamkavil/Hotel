@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTheme } from "@mui/material/styles";
 
-const Navbar = () => {
+export default function Navbar () {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -139,5 +139,3 @@ const Navbar = () => {
     </AppBar>
   );
 };
-
-export default Navbar;
