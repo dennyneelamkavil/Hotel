@@ -10,7 +10,7 @@ import {
   useTheme,
   Accordion,
   AccordionSummary,
-  AccordionDetails
+  AccordionDetails,
 } from "@mui/material";
 import { ExpandMore, Facebook, Instagram, YouTube } from "@mui/icons-material";
 
@@ -73,7 +73,7 @@ export default function Footer() {
               </Typography>
             </Grid>
             <Grid sx={{ pt: 2 }}>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" gutterBottom sx={{ color: "#c66b29" }}>
                 FIND US ON
               </Typography>
               <IconButton
@@ -106,179 +106,215 @@ export default function Footer() {
             </Grid>
           </Grid>
           {isLgDown ? (
-            <div style={{display: "flex", flexDirection: isMdDown ? "column" : "row", justifyContent: "space-between", margin:"20px"}}>
+            <Grid container direction={isMdDown ? "column" : "row"} justifyContent="center" margin={"20px"}>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
                       HOTEL
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#rooms-suites" color="inherit" underline="none" display="block">
+                    <Link href="#rooms-suites" color="inherit" underline="none" display="block" gutterBottom>
                       Rooms & Suites
                     </Link>
-                    <Link href="#special-offers" color="inherit" underline="none" display="block">
+                    <Link href="#special-offers" color="inherit" underline="none" display="block" gutterBottom>
                       Special Offers
                     </Link>
-                    <Link href="#loyal-guest" color="inherit" underline="none" display="block">
+                    <Link href="#loyal-guest" color="inherit" underline="none" display="block" gutterBottom>
                       Loyal Guest
                     </Link>
-                    <Link href="#gallery" color="inherit" underline="none" display="block">
+                    <Link href="#gallery" color="inherit" underline="none" display="block" gutterBottom>
                       Gallery
                     </Link>
-                    <Link href="#location-map" color="inherit" underline="none" display="block">
+                    <Link href="#location-map" color="inherit" underline="none" display="block" gutterBottom>
                       Location & Map
                     </Link>
-                    <Link href="#category/travel-guide" color="inherit" underline="none" display="block">
+                    <Link href="#category/travel-guide" color="inherit" underline="none" display="block" gutterBottom>
                       Hanoi Travel Guide
                     </Link>
                   </AccordionDetails>
                 </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
                       DINING
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block">
+                    <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block" gutterBottom>
                       Cloud Nine Restaurant
                     </Link>
-                    <Link href="#sky-bar" color="inherit" underline="none" display="block">
+                    <Link href="#sky-bar" color="inherit" underline="none" display="block" gutterBottom>
                       Sky Bar
                     </Link>
-                    <Link href="#lobby-lounge" color="inherit" underline="none" display="block">
+                    <Link href="#lobby-lounge" color="inherit" underline="none" display="block" gutterBottom>
                       Lobby Lounge
                     </Link>
                   </AccordionDetails>
                 </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
                       POLICY
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#privacy-policy" color="inherit" underline="none" display="block">
+                    <Link href="#privacy-policy" color="inherit" underline="none" display="block" gutterBottom>
                       Privacy Policy
                     </Link>
-                    <Link href="#terms-conditions" color="inherit" underline="none" display="block">
+                    <Link href="#terms-conditions" color="inherit" underline="none" display="block" gutterBottom>
                       Terms & Conditions
                     </Link>
-                    <Link href="#cookie-policy" color="inherit" underline="none" display="block">
+                    <Link href="#cookie-policy" color="inherit" underline="none" display="block" gutterBottom>
                       Cookie Policy
                     </Link>
                   </AccordionDetails>
                 </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
-                      POLICY
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
+                      ADDITIONAL
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#privacy-policy" color="inherit" underline="none" display="block">
-                      Privacy Policy
+                    <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                      Extra Link 1
                     </Link>
-                    <Link href="#terms-conditions" color="inherit" underline="none" display="block">
-                      Terms & Conditions
-                    </Link>
-                    <Link href="#cookie-policy" color="inherit" underline="none" display="block">
-                      Cookie Policy
+                    <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                      Extra Link 2
                     </Link>
                   </AccordionDetails>
                 </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
-                      POLICY
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
+                      MORE LINKS
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#privacy-policy" color="inherit" underline="none" display="block">
-                      Privacy Policy
+                    <Link href="#more-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                      More Link 1
                     </Link>
-                    <Link href="#terms-conditions" color="inherit" underline="none" display="block">
-                      Terms & Conditions
-                    </Link>
-                    <Link href="#cookie-policy" color="inherit" underline="none" display="block">
-                      Cookie Policy
+                    <Link href="#more-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                      More Link 2
                     </Link>
                   </AccordionDetails>
                 </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
                 <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
                   <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" gutterBottom>
-                      POLICY
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
+                      ADDITIONAL
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#privacy-policy" color="inherit" underline="none" display="block">
-                      Privacy Policy
+                    <Link href="#additional-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                      Additional Link 1
                     </Link>
-                    <Link href="#terms-conditions" color="inherit" underline="none" display="block">
-                      Terms & Conditions
-                    </Link>
-                    <Link href="#cookie-policy" color="inherit" underline="none" display="block">
-                      Cookie Policy
+                    <Link href="#additional-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                      Additional Link 2
                     </Link>
                   </AccordionDetails>
                 </Accordion>
-            </div>
+              </Grid>
+            </Grid>
           ) : (
-            <>
-              <Grid item xs={12} sm={2}>
-                <Typography variant="h6" gutterBottom>
+            <Grid container justifyContent={"center"} lg={8} padding={4}>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   HOTEL
                 </Typography>
-                <Link href="#rooms-suites" color="inherit" underline="none" display="block">
+                <Link href="#rooms-suites" color="inherit" underline="none" display="block" gutterBottom>
                   Rooms & Suites
                 </Link>
-                <Link href="#special-offers" color="inherit" underline="none" display="block">
+                <Link href="#special-offers" color="inherit" underline="none" display="block" gutterBottom>
                   Special Offers
                 </Link>
-                <Link href="#loyal-guest" color="inherit" underline="none" display="block">
+                <Link href="#loyal-guest" color="inherit" underline="none" display="block" gutterBottom>
                   Loyal Guest
                 </Link>
-                <Link href="#gallery" color="inherit" underline="none" display="block">
+                <Link href="#gallery" color="inherit" underline="none" display="block" gutterBottom>
                   Gallery
                 </Link>
-                <Link href="#location-map" color="inherit" underline="none" display="block">
+                <Link href="#location-map" color="inherit" underline="none" display="block" gutterBottom>
                   Location & Map
                 </Link>
-                <Link href="#category/travel-guide" color="inherit" underline="none" display="block">
+                <Link href="#category/travel-guide" color="inherit" underline="none" display="block" gutterBottom>
                   Hanoi Travel Guide
                 </Link>
               </Grid>
-              <Grid item xs={12} sm={2}>
-                <Typography variant="h6" gutterBottom>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   DINING
                 </Typography>
-                <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block">
+                <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block" gutterBottom>
                   Cloud Nine Restaurant
                 </Link>
-                <Link href="#sky-bar" color="inherit" underline="none" display="block">
+                <Link href="#sky-bar" color="inherit" underline="none" display="block" gutterBottom>
                   Sky Bar
                 </Link>
-                <Link href="#lobby-lounge" color="inherit" underline="none" display="block">
+                <Link href="#lobby-lounge" color="inherit" underline="none" display="block" gutterBottom>
                   Lobby Lounge
                 </Link>
               </Grid>
-              <Grid item xs={12} sm={2}>
-                <Typography variant="h6" gutterBottom>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   POLICY
                 </Typography>
-                <Link href="#privacy-policy" color="inherit" underline="none" display="block">
+                <Link href="#privacy-policy" color="inherit" underline="none" display="block" gutterBottom>
                   Privacy Policy
                 </Link>
-                <Link href="#terms-conditions" color="inherit" underline="none" display="block">
+                <Link href="#terms-conditions" color="inherit" underline="none" display="block" gutterBottom>
                   Terms & Conditions
                 </Link>
-                <Link href="#cookie-policy" color="inherit" underline="none" display="block">
+                <Link href="#cookie-policy" color="inherit" underline="none" display="block" gutterBottom>
                   Cookie Policy
                 </Link>
               </Grid>
-            </>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
+                  ADDITIONAL
+                </Typography>
+                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 1
+                </Link>
+                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 2
+                </Link>
+              </Grid>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
+                  ADDITIONAL
+                </Typography>
+                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 1
+                </Link>
+                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 2
+                </Link>
+              </Grid>
+              <Grid item lg={3}>
+                <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
+                  ADDITIONAL
+                </Typography>
+                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 1
+                </Link>
+                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                  Extra Link 2
+                </Link>
+              </Grid>
+            </Grid>
           )}
         </Grid>
         <Box sx={{ textAlign: "center", mt: 4, pb: 5 }}>

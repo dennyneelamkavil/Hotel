@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, useMediaQuery,
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export default function Navbar () {
+export default function Navbar() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,11 +37,15 @@ export default function Navbar () {
   };
 
   return (
-    <AppBar position="fixed" sx={{ padding: "1rem",
-      backgroundColor: isScrolled ? "white" : "transparent",
-      transition: "background-color 0.3s ease-in-out",
-      boxShadow: isScrolled ? theme.shadows[4] : "none",
-     }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        padding: "1rem",
+        backgroundColor: isScrolled ? "white" : "transparent",
+        transition: "background-color 0.3s ease-in-out",
+        boxShadow: isScrolled ? theme.shadows[4] : "none",
+      }}
+    >
       <Toolbar>
         {isMobile ? (
           <>
@@ -83,7 +87,8 @@ export default function Navbar () {
                 transition: "background-color 0.3s ease-in-out",
                 textDecoration: "none",
               }}
-              component={Link} to="/"
+              component={Link}
+              to="/"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               Parallel World Hotel
@@ -103,7 +108,8 @@ export default function Navbar () {
                 transition: "background-color 0.3s ease-in-out",
                 textDecoration: "none",
               }}
-              component={Link} to="/"
+              component={Link}
+              to="/"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               Parallel World Hotel
@@ -137,4 +143,4 @@ export default function Navbar () {
       </Toolbar>
     </AppBar>
   );
-};
+}

@@ -12,22 +12,14 @@ import { useMediaQuery, useTheme } from "@mui/material";
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", right: "10px", zIndex: 1 }}
-      onClick={onClick}
-    />
+    <div className={className} style={{ ...style, display: "block", right: "10px", zIndex: 1 }} onClick={onClick} />
   );
 };
 
 const PrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
-      onClick={onClick}
-    />
+    <div className={className} style={{ ...style, display: "block", left: "10px", zIndex: 1 }} onClick={onClick} />
   );
 };
 
@@ -52,67 +44,71 @@ export default function Carousel() {
   };
 
   return (
-      <Slider {...settings}>
-        <div>
-          <div
-            style={{
-              backgroundImage: `url(${image1})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: isMobile ? "100vh" : "90vh",
-              width: "100%",
-            }}
-          >
-            <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>Embodies classic charm with Asian touches and traditional features</h2>
-            </Container>
-          </div>
+    <Slider {...settings}>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${image1})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: isMobile ? "100vh" : "90vh",
+            width: "100%",
+          }}
+        >
+          <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>
+              Embodies classic charm with Asian touches and traditional features
+            </h2>
+          </Container>
         </div>
-        <div>
-          <div
-            style={{
-              backgroundImage: `url(${image2})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: isMobile ? "100vh" : "90vh",
-              width: "100%",
-            }}
-          >
-            <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>A luxury retreat right in the heart of Hanoi's bustling old city!</h2>
-            </Container>
-          </div>
+      </div>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${image2})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: isMobile ? "100vh" : "90vh",
+            width: "100%",
+          }}
+        >
+          <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>
+              A luxury retreat right in the heart of Hanoi's bustling old city!
+            </h2>
+          </Container>
         </div>
-        <div>
-          <div
-            style={{
-              backgroundImage: `url(${image3})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: isMobile ? "100vh" : "90vh",
-              width: "100%",
-            }}
-          >
-            <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>Cloud Nine Restaurant</h2>
-            </Container>
-          </div>
+      </div>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${image3})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: isMobile ? "100vh" : "90vh",
+            width: "100%",
+          }}
+        >
+          <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>Cloud Nine Restaurant</h2>
+          </Container>
         </div>
-        <div>
-          <div
-            style={{
-              backgroundImage: `url(${image4})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: isMobile ? "100vh" : "90vh",
-              width: "100%",
-            }}
-          >
-            <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>Lighthouse Sky Bar</h2>
-            </Container>
-          </div>
+      </div>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${image4})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            height: isMobile ? "100vh" : "90vh",
+            width: "100%",
+          }}
+        >
+          <Container sx={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <h2 style={{ color: "white", textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}>Lighthouse Sky Bar</h2>
+          </Container>
         </div>
-      </Slider>
+      </div>
+    </Slider>
   );
-};
+}
