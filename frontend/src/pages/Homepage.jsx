@@ -8,7 +8,7 @@ export default function Homepage() {
     <>
     <Navbar/>
     <Carousel/>
-    <div style={{margin: "50px"}}>    
+    <div style={{margin: "5vh"}}>    
     <h1>
     Parallel World Hotel Hanoi
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veritatis tempore animi cum? Molestiae, eius, architecto at impedit dolorem natus placeat amet optio harum autem saepe earum dicta officiis! Temporibus.
