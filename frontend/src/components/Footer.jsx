@@ -12,6 +12,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import { ExpandMore, Facebook, Instagram, YouTube } from "@mui/icons-material";
 
 export default function Footer() {
@@ -115,24 +116,42 @@ export default function Footer() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#rooms-suites" color="inherit" underline="none" display="block" gutterBottom>
+                    <RouterLink
+                      to={"/rooms-suites"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Rooms & Suites
-                    </Link>
-                    <Link href="#special-offers" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/special-offers"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Special Offers
-                    </Link>
-                    <Link href="#loyal-guest" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/loyal-guest"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Loyal Guest
-                    </Link>
-                    <Link href="#gallery" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/gallery"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Gallery
-                    </Link>
-                    <Link href="#location-map" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/location"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Location & Map
-                    </Link>
-                    <Link href="#category/travel-guide" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/category/travel-guide"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Hanoi Travel Guide
-                    </Link>
+                    </RouterLink>
                   </AccordionDetails>
                 </Accordion>
               </Grid>
@@ -144,15 +163,24 @@ export default function Footer() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block" gutterBottom>
+                    <RouterLink
+                      to={"/cloud-nine-restaurant"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Cloud Nine Restaurant
-                    </Link>
-                    <Link href="#sky-bar" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/sky-bar"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Sky Bar
-                    </Link>
-                    <Link href="#lobby-lounge" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/lobby-lounge"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Lobby Lounge
-                    </Link>
+                    </RouterLink>
                   </AccordionDetails>
                 </Accordion>
               </Grid>
@@ -164,15 +192,24 @@ export default function Footer() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#privacy-policy" color="inherit" underline="none" display="block" gutterBottom>
+                    <RouterLink
+                      to={"/privacy-policy"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Privacy Policy
-                    </Link>
-                    <Link href="#terms-conditions" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/terms-conditions"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Terms & Conditions
-                    </Link>
-                    <Link href="#cookie-policy" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/cookie-policy"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Cookie Policy
-                    </Link>
+                    </RouterLink>
                   </AccordionDetails>
                 </Accordion>
               </Grid>
@@ -184,29 +221,18 @@ export default function Footer() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                    <RouterLink
+                      to={"/extra-link-1"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Extra Link 1
-                    </Link>
-                    <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                    </RouterLink>
+                    <RouterLink
+                      to={"/extra-link-2"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
                       Extra Link 2
-                    </Link>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
-                <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
-                  <AccordionSummary expandIcon={<ExpandMore />}>
-                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
-                      MORE LINKS
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Link href="#more-link-1" color="inherit" underline="none" display="block" gutterBottom>
-                      More Link 1
-                    </Link>
-                    <Link href="#more-link-2" color="inherit" underline="none" display="block" gutterBottom>
-                      More Link 2
-                    </Link>
+                    </RouterLink>
                   </AccordionDetails>
                 </Accordion>
               </Grid>
@@ -218,12 +244,41 @@ export default function Footer() {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Link href="#additional-link-1" color="inherit" underline="none" display="block" gutterBottom>
-                      Additional Link 1
-                    </Link>
-                    <Link href="#additional-link-2" color="inherit" underline="none" display="block" gutterBottom>
-                      Additional Link 2
-                    </Link>
+                    <RouterLink
+                      to={"/extra-link-1"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
+                      Extra Link 1
+                    </RouterLink>
+                    <RouterLink
+                      to={"/extra-link-2"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
+                      Extra Link 2
+                    </RouterLink>
+                  </AccordionDetails>
+                </Accordion>
+              </Grid>
+              <Grid item md={3} width={isMdDown ? "40%" : "auto"}>
+                <Accordion sx={{ color: "inherit", backgroundColor: "transparent", boxShadow: "none" }}>
+                  <AccordionSummary expandIcon={<ExpandMore />}>
+                    <Typography variant="h6" sx={{ color: "#c66b29" }}>
+                      ADDITIONAL
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <RouterLink
+                      to={"/extra-link-1"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
+                      Extra Link 1
+                    </RouterLink>
+                    <RouterLink
+                      to={"/extra-link-2"}
+                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                    >
+                      Extra Link 2
+                    </RouterLink>
                   </AccordionDetails>
                 </Accordion>
               </Grid>
@@ -234,85 +289,139 @@ export default function Footer() {
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   HOTEL
                 </Typography>
-                <Link href="#rooms-suites" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/rooms-suites"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Rooms & Suites
-                </Link>
-                <Link href="#special-offers" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/special-offers"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Special Offers
-                </Link>
-                <Link href="#loyal-guest" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/loyal-guest"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Loyal Guest
-                </Link>
-                <Link href="#gallery" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/gallery"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Gallery
-                </Link>
-                <Link href="#location-map" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/location"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Location & Map
-                </Link>
-                <Link href="#category/travel-guide" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/category/travel-guide"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Hanoi Travel Guide
-                </Link>
+                </RouterLink>
               </Grid>
               <Grid item lg={3}>
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   DINING
                 </Typography>
-                <Link href="#cloud-nine-restaurant" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/cloud-nine-restaurant"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Cloud Nine Restaurant
-                </Link>
-                <Link href="#sky-bar" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/sky-bar"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Sky Bar
-                </Link>
-                <Link href="#lobby-lounge" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/lobby-lounge"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Lobby Lounge
-                </Link>
+                </RouterLink>
               </Grid>
               <Grid item lg={3}>
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   POLICY
                 </Typography>
-                <Link href="#privacy-policy" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/privacy-policy"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Privacy Policy
-                </Link>
-                <Link href="#terms-conditions" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/terms-conditions"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Terms & Conditions
-                </Link>
-                <Link href="#cookie-policy" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/cookie-policy"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Cookie Policy
-                </Link>
+                </RouterLink>
               </Grid>
               <Grid item lg={3}>
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   ADDITIONAL
                 </Typography>
-                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/extra-link-1"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 1
-                </Link>
-                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/extra-link-2"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 2
-                </Link>
+                </RouterLink>
               </Grid>
               <Grid item lg={3}>
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   ADDITIONAL
                 </Typography>
-                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/extra-link-1"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 1
-                </Link>
-                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/extra-link-2"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 2
-                </Link>
+                </RouterLink>
               </Grid>
               <Grid item lg={3}>
                 <Typography variant="h6" sx={{ color: "#c66b29" }} gutterBottom>
                   ADDITIONAL
                 </Typography>
-                <Link href="#extra-link-1" color="inherit" underline="none" display="block" gutterBottom>
+                <RouterLink
+                  to={"/extra-link-1"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 1
-                </Link>
-                <Link href="#extra-link-2" color="inherit" underline="none" display="block" gutterBottom>
+                </RouterLink>
+                <RouterLink
+                  to={"/extra-link-2"}
+                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                >
                   Extra Link 2
-                </Link>
+                </RouterLink>
               </Grid>
             </Grid>
           )}

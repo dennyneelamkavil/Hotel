@@ -56,22 +56,22 @@ export default function Navbar() {
               <MenuItem component={Link} to="/" onClick={handleClose}>
                 Overview
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
+              <MenuItem component={Link} to="/gallery" onClick={handleClose}>
                 Gallery
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
-                Accomdations
+              <MenuItem component={Link} to="/rooms-suites" onClick={handleClose}>
+              Rooms & Suites
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
+              <MenuItem component={Link} to="/special-offers" onClick={handleClose}>
                 Special Offers
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
-                tours
+              <MenuItem component={Link} to="/tours" onClick={handleClose}>
+                Tours
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
+              <MenuItem component={Link} to="/category/travel-guide" onClick={handleClose}>
                 Travel Guide
               </MenuItem>
-              <MenuItem component={Link} to="/" onClick={handleClose}>
+              <MenuItem component={Link} to="/loyal-guest" onClick={handleClose}>
                 Loyal Guest
               </MenuItem>
             </Menu>
@@ -116,26 +116,25 @@ export default function Navbar() {
             </Typography>
             <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
               <Link to="/" style={linkStyle}>
-                Overview
-                {/* <Typography sx={{ color: "inherit", "&:hover": { color: "red" } }}>Overview</Typography> */}
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Overview</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Gallery
+              <Link to="/gallery" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Gallery</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Accomdations
+              <Link to="/rooms-suites" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Rooms & Suites</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Special Offers
+              <Link to="/special-offers" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Special Offers</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Tours
+              <Link to="/tours" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Tours</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Travel Guide
+              <Link to="/category/travel-guide" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Travel Guide</Typography>
               </Link>
-              <Link to="/" style={linkStyle}>
-                Loyal Guest
+              <Link to="/loyal-guest" style={linkStyle}>
+                <Typography sx={{ color: "inherit", "&:hover": { color: "#c66b29" } }}>Loyal Guest</Typography>
               </Link>
             </Stack>
           </Stack>
