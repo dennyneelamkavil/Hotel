@@ -30,6 +30,13 @@ export default function Footer() {
 
   const maxWidth = getMaxWidth();
 
+  const linkStyle = {
+    textDecoration: "none",
+    color: "#ffffff",
+    display: "block",
+    marginBottom:"3px"
+  };
+
   return (
     <Box sx={{ backgroundColor: "#11224D", color: "#ffffff", py: 4 }}>
       <Container maxWidth={maxWidth}>
@@ -118,37 +125,37 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/rooms-suites"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Rooms & Suites
                     </RouterLink>
                     <RouterLink
                       to={"/special-offers"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Special Offers
                     </RouterLink>
                     <RouterLink
                       to={"/loyal-guest"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Loyal Guest
                     </RouterLink>
                     <RouterLink
                       to={"/gallery"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Gallery
                     </RouterLink>
                     <RouterLink
                       to={"/location"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Location & Map
                     </RouterLink>
                     <RouterLink
                       to={"/category/travel-guide"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Hanoi Travel Guide
                     </RouterLink>
@@ -165,19 +172,19 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/cloud-nine-restaurant"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Cloud Nine Restaurant
                     </RouterLink>
                     <RouterLink
                       to={"/sky-bar"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Sky Bar
                     </RouterLink>
                     <RouterLink
                       to={"/lobby-lounge"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Lobby Lounge
                     </RouterLink>
@@ -194,19 +201,19 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/privacy-policy"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Privacy Policy
                     </RouterLink>
                     <RouterLink
                       to={"/terms-conditions"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Terms & Conditions
                     </RouterLink>
                     <RouterLink
                       to={"/cookie-policy"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Cookie Policy
                     </RouterLink>
@@ -223,13 +230,13 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/extra-link-1"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 1
                     </RouterLink>
                     <RouterLink
                       to={"/extra-link-2"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 2
                     </RouterLink>
@@ -246,13 +253,13 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/extra-link-1"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 1
                     </RouterLink>
                     <RouterLink
                       to={"/extra-link-2"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 2
                     </RouterLink>
@@ -269,13 +276,13 @@ export default function Footer() {
                   <AccordionDetails>
                     <RouterLink
                       to={"/extra-link-1"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 1
                     </RouterLink>
                     <RouterLink
                       to={"/extra-link-2"}
-                      style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                      style={linkStyle}
                     >
                       Extra Link 2
                     </RouterLink>
@@ -291,37 +298,37 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/rooms-suites"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Rooms & Suites
                 </RouterLink>
                 <RouterLink
                   to={"/special-offers"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Special Offers
                 </RouterLink>
                 <RouterLink
                   to={"/loyal-guest"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Loyal Guest
                 </RouterLink>
                 <RouterLink
                   to={"/gallery"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Gallery
                 </RouterLink>
                 <RouterLink
                   to={"/location"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Location & Map
                 </RouterLink>
                 <RouterLink
                   to={"/category/travel-guide"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Hanoi Travel Guide
                 </RouterLink>
@@ -332,19 +339,19 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/cloud-nine-restaurant"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Cloud Nine Restaurant
                 </RouterLink>
                 <RouterLink
                   to={"/sky-bar"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Sky Bar
                 </RouterLink>
                 <RouterLink
                   to={"/lobby-lounge"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Lobby Lounge
                 </RouterLink>
@@ -355,19 +362,19 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/privacy-policy"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Privacy Policy
                 </RouterLink>
                 <RouterLink
                   to={"/terms-conditions"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Terms & Conditions
                 </RouterLink>
                 <RouterLink
                   to={"/cookie-policy"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Cookie Policy
                 </RouterLink>
@@ -378,13 +385,13 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/extra-link-1"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 1
                 </RouterLink>
                 <RouterLink
                   to={"/extra-link-2"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 2
                 </RouterLink>
@@ -395,13 +402,13 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/extra-link-1"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 1
                 </RouterLink>
                 <RouterLink
                   to={"/extra-link-2"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 2
                 </RouterLink>
@@ -412,13 +419,13 @@ export default function Footer() {
                 </Typography>
                 <RouterLink
                   to={"/extra-link-1"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 1
                 </RouterLink>
                 <RouterLink
                   to={"/extra-link-2"}
-                  style={{ textDecoration: "none", color: "inherit", display: "block", marginBottom: "3px" }}
+                  style={linkStyle}
                 >
                   Extra Link 2
                 </RouterLink>

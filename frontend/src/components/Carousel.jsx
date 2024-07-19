@@ -28,7 +28,7 @@ export default function Carousel() {
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
